@@ -20,7 +20,7 @@
 ** dialog. You have to check it in first.
 **
 -->
-<project name="myPluginName" default="dist" basedir=".">
+<project name="waydownloader" default="dist" basedir=".">
     <!--
       ************************************************
       ** should not be necessary to change the following properties
@@ -66,7 +66,7 @@
         <copy todir="${plugin.build.dir}/resources">
             <fileset dir="resources"/>
         </copy>
-        <copy todir="${plugin.build.dir}/images">
+	<copy todir="${plugin.build.dir}/images">
             <fileset dir="images"/>
         </copy>
         <copy todir="${plugin.build.dir}">
@@ -85,12 +85,12 @@
         ************************************************
     -->
             <manifest>
-                <attribute name="Author" value="..."/>
-                <attribute name="Plugin-Class" value="..."/>
+                <attribute name="Author" value="Harry Wood"/>
+                <attribute name="Plugin-Class" value="WayDownloaderPlugin"/>
                 <attribute name="Plugin-Date" value="${version.entry.commit.date}"/>
-                <attribute name="Plugin-Description" value="..."/>
-                <attribute name="Plugin-Link" value="..."/>
-                <attribute name="Plugin-Mainversion" value="..."/>
+                <attribute name="Plugin-Description" value="Easy downloading along a long set of interconnected ways"/>
+                <attribute name="Plugin-Link" value="http://wiki.openstreetmap.org/wiki/JOSM/Plugins/WayDownloaderPlugin"/>
+                <attribute name="Plugin-Mainversion" value="1"/>
                 <attribute name="Plugin-Version" value="${version.entry.commit.revision}"/>
             </manifest>
         </jar>
